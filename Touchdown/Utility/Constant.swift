@@ -13,3 +13,4 @@ let colorGray: Color = Color(UIColor.systemGray4)
 
 // Image name
 let logoLineal: String = "logo-lineal"
+let logoDark: String = "logo-dark"

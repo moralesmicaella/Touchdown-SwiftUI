@@ -10,3 +10,6 @@ import SwiftUI
 // Color
 let colorBackground: Color = Color("ColorBackground")
 let colorGray: Color = Color(UIColor.systemGray4)
+
+// Image name
+let logoLineal: String = "logo-lineal"

@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		24BB3B0627C48B18001319B2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24BB3B0527C48B18001319B2 /* Launch Screen.storyboard */; };
 		24BB3B0B27C48D97001319B2 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BB3B0A27C48D97001319B2 /* Constant.swift */; };
+		24BB3B0D27C48EF6001319B2 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BB3B0C27C48EF6001319B2 /* FooterView.swift */; };
+		24BB3B1327C498A5001319B2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BB3B1227C498A5001319B2 /* HomeView.swift */; };
 		24CC160627C48522004091CB /* TouchdownApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CC160527C48522004091CB /* TouchdownApp.swift */; };
-		24CC160827C48522004091CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CC160727C48522004091CB /* ContentView.swift */; };
 		24CC160A27C48526004091CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24CC160927C48526004091CB /* Assets.xcassets */; };
 		24CC160D27C48526004091CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24CC160C27C48526004091CB /* Preview Assets.xcassets */; };
 		24CC161727C48863004091CB /* player.json in Resources */ = {isa = PBXBuildFile; fileRef = 24CC161327C48863004091CB /* player.json */; };
@@ -22,9 +23,10 @@
 /* Begin PBXFileReference section */
 		24BB3B0527C48B18001319B2 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		24BB3B0A27C48D97001319B2 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		24BB3B0C27C48EF6001319B2 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		24BB3B1227C498A5001319B2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		24CC160227C48522004091CB /* Touchdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Touchdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24CC160527C48522004091CB /* TouchdownApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchdownApp.swift; sourceTree = "<group>"; };
-		24CC160727C48522004091CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		24CC160927C48526004091CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24CC160C27C48526004091CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		24CC161327C48863004091CB /* player.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = player.json; sourceTree = "<group>"; };
@@ -65,6 +67,22 @@
 				24BB3B0A27C48D97001319B2 /* Constant.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		24BB3B1027C497C4001319B2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				24BB3B0C27C48EF6001319B2 /* FooterView.swift */,
+				24BB3B1227C498A5001319B2 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		24BB3B1127C497CD001319B2 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		24CC15F927C48522004091CB = {
@@ -122,7 +140,8 @@
 		24CC161C27C48873004091CB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				24CC160727C48522004091CB /* ContentView.swift */,
+				24BB3B1027C497C4001319B2 /* Home */,
+				24BB3B1127C497CD001319B2 /* Detail */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -210,7 +229,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24CC160827C48522004091CB /* ContentView.swift in Sources */,
+				24BB3B0D27C48EF6001319B2 /* FooterView.swift in Sources */,
+				24BB3B1327C498A5001319B2 /* HomeView.swift in Sources */,
 				24CC160627C48522004091CB /* TouchdownApp.swift in Sources */,
 				24BB3B0B27C48D97001319B2 /* Constant.swift in Sources */,
 			);

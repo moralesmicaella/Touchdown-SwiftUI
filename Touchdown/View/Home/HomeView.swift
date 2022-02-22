@@ -19,8 +19,8 @@ struct HomeView: View {
       ScrollView(.vertical, showsIndicators: false) {
         VStack {
           FeaturedTabView()
-            .frame(height: 250)
-            .padding(.vertical, 20)
+            .frame(minHeight: 256)
+            .padding(.vertical, 10)
           
           FooterView()
             .padding(.horizontal)

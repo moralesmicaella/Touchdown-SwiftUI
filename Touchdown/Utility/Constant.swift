@@ -7,8 +7,9 @@
 
 import SwiftUI
 
-// DATA
+// Data
 let players: [Player] = Bundle.main.decodeJSON("player")
+let categories: [Category] = Bundle.main.decodeJSON("category")
 
 // Color
 let colorBackground: Color = Color("ColorBackground")
@@ -17,3 +18,9 @@ let colorGray: Color = Color(UIColor.systemGray4)
 // Image name
 let logoLineal: String = "logo-lineal"
 let logoDark: String = "logo-dark"
+
+// Layout
+let columnSpacing: CGFloat = 10
+var gridLayout: [GridItem] {
+  return Array(repeating: GridItem(.flexible()), count: 2)
+}

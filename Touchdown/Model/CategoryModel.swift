@@ -5,7 +5,7 @@
 //  Created by Micaella Morales on 2/22/22.
 //
 
-import SwiftUI
+import Foundation
 
 struct Category: Identifiable, Codable {
   let id: Int

@@ -27,3 +27,7 @@ let columnSpacing: CGFloat = 10
 var gridLayout: [GridItem] {
   return Array(repeating: GridItem(.flexible()), count: 2)
 }
+
+// UX
+let feedback = UIImpactFeedbackGenerator(style: .medium)
+

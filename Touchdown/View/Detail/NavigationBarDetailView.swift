@@ -17,6 +17,7 @@ struct NavigationBarDetailView: View {
           .font(.title)
           .foregroundColor(.white)
       }
+      .buttonStyle(.plain)
       
       Spacer()
       
@@ -26,6 +27,7 @@ struct NavigationBarDetailView: View {
           .font(.title)
           .foregroundColor(.white)
       }
+      .buttonStyle(.plain)
 
     }
   }

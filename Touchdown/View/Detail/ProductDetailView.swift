@@ -19,9 +19,35 @@ struct ProductDetailView: View {
       
       TopPartDetailView()
         .padding(.horizontal)
+        .zIndex(1)
       
-      Spacer()
+      VStack(alignment: .center, spacing: 0) {
+        RatingsSizesDetailView()
+          .padding(.top, -20)
+          .padding(.bottom, 10)
+        
+        ScrollView(.vertical, showsIndicators: false) {
+          Text(sampleProduct.description)
+            .font(.system(.body, design: .rounded))
+            .foregroundColor(.gray)
+            .multilineTextAlignment(.leading)
+        }
+        
+        QuantityFavoriteDetailView()
+          .padding(.vertical, 10)
+        
+        AddToCartDetailView()
+      }
+      .padding(.horizontal)
+      .background(
+        Color.white
+          .clipShape(CustomShape())
+          .padding(.top, -105)
+          .ignoresSafeArea(.all, edges: .bottom)
+      )
+      
     }
+    .zIndex(0)
     .background(
       Color(
         red: sampleProduct.red,
